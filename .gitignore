@@ -1,1 +1,7 @@
 confidential*
+
+#Ignore cached python compiled files
+*.pyc
+
+#Ignore temp swap files
+*~
