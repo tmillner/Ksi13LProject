@@ -9,9 +9,9 @@ idx_country=0
 idx_state=0
 
 #Create output files for country, state, & city
-out_file_country=open("countries","w")
-out_file_state=open("states","w")
-out_file_city=open("cities","w")
+out_file_country=open("countries_TEST","w")
+out_file_state=open("states_TEST","w")
+out_file_city=open("cities_TEST","w")
 
 #Open file the TRADITIONAL way (not utilizing 'with' kword)
 in_file=open("countries_cities_regions","r")
