@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>International Assistant Questionnaire</title> 
+		<link type="text/css" href="/questionnaire/templates/questionnaire/css/main.css" rel="stylesheet">
+		{% load staticfiles %}
+		<link type="text/css" href="{% static "css/main.css" %}" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Questionnaire</h1>
+		<br />
+		<h3><i>Please fill out the questions below.</i></h3>
+	
+		<div>
+			<form>
+					<table>
+						<tr>
+						<td>1) What's your Name?</td>
+						<td><input type="text" name="Name"></td>
+				    </tr></tr>
+						<td>2) What's your primary language?</td>
+						<td><select name="Language">
+								{% for language in languages %}
+								<option value="{{ language.id }}">{{ language.language }}</option>
+								{% endfor %}
+							</select>
+						</td>
+						</tr><tr>
+						<td>3) What's your Highest Education level attained?</td>
+						<td><select name="Education">
+								{% for education in educations %}
+								<option value="{{ education.id  }}">{{ education.education }}</option>
+								{% endfor %}
+							</select>
+						</td>
+						</tr><tr>
+						<td>4) What country where you born or claim?</td>
+						<td><select name="Country">
+								{% for country in countries %}
+								<option value="{{ country.id }}">{{ country.country }}</option>
+								{% endfor %}
+							</select>
+						</td>
+						</tr><tr>
+						<td><i>Placeholder for Q3, show states, then cities</i></td>
+						</tr><tr>
+						<td>5) What ethnic group do you claim</td>
+						<td><select name="Race">
+								{% for race in races %}
+								<option value="{{ race.id }}">{{ race.race }}</option>
+								{% endfor %}
+							</select>
+						</td>
+						</tr><tr>
+						<td>6) What type of car do you drive? <br />(potentially first use rbutton to see if they have a car)</td>
+						<td><select name="Car">
+								{% for car in cars %}
+								<option value="{{ car.id }}">{{ car.model }}</option>
+								{% endfor %}
+						  	</select>
+						</td>
+					  </tr></tr>
+						
+
+					</table>
+		  </form>
+	  </div>
+
+
+	</body>
+</html>
