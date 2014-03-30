@@ -163,7 +163,7 @@ LOGGING = {
 }
 #Instead of creating backup to use on local env (differing from prod)
 #Check if there's a local_settings file. It's ignored in prod env
-try:
-	from local_settings import *
-except Exception e:
-	pass
+#try:
+#	from local_settings import *
+#except Exception e:
+#	pass
