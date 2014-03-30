@@ -1,0 +1,12 @@
+confidential*
+
+#Ignore cached python compiled files
+*.pyc
+
+#Ignore temp swap files
+*~
+
+#ignore the local_settings files
+**/local_settings.py
+
+ProjectVENV

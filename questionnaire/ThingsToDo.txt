@@ -1,0 +1,5 @@
+implement custom 404 -- DONE (questionnaire/templates/404.html)
+add translation
+add country flags 
+make more dynamic show fields only where applicable
+see if views can be further split based on areas of a page 
