@@ -140,16 +140,3 @@ class States(models.Model):
     def __unicode__(self):
       return self.state
 
-class Records(models.Model):
-    id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=50, blank=True)
-    language = models.ForeignKey(Languages, null=True, db_column='language', blank=True)
-    education = models.ForeignKey(Educations, null=True, db_column='education', blank=True)
-    country = models.ForeignKey(Countries, null=True, db_column='country', blank=True)
-    state = models.ForeignKey(States, null=True, db_column='state', blank=True)
-    city = models.ForeignKey(Cities, null=True, db_column='city', blank=True)
-    race = models.ForeignKey(Races, null=True, db_column='race', blank=True)
-    car = models.ForeignKey(Cars, null=True, db_column='car', blank=True)
-    submitted_at = models.DateTimeField()
-    class Meta:
-        db_table = 'records'
